@@ -2,11 +2,9 @@ version: "3"
 
 services:
   server:
-    image: yourserverimage
+    image: node
     expose:
       - "8080"
-    env_file:
-      - ./server/.env
 
   nginx:
     build:
