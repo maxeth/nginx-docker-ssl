@@ -1,6 +1,6 @@
 # CertBot SSL with Nginx inside Docker
 
-An Nginx Dockerfile and docker-compose setup that includes the python-certbot-nginx script which helps generating instant SSL certificates for the NGINX proxy.
+An Nginx Dockerfile and docker-compose setup that includes the python-certbot-nginx script which helps generating instant SSL certificates for the Nginx proxy.
 
 ## Setup
 
@@ -20,3 +20,10 @@ An Nginx Dockerfile and docker-compose setup that includes the python-certbot-ng
 
 6. Press `Ctrl + d` to exit bash
 7. Check if your SSL certificate works [here](https://www.ssllabs.com/ssltest/) and vist `https://[your_domain]`
+
+<br/>
+
+## Optional Usage
+
+The Nginx Docker image can also be pulled and integrated to docker-compose directly from Dockerhub under the image name: `max37/nginx-ssl:latest`.
+Note that this image exposes the ports `443` and `80` automatically as part of the Dockerfile setup.
